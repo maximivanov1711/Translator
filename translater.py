@@ -20,12 +20,14 @@ def main():
     while True:
         request = input('->').strip()
         
+        #translate to russian
         if request.startswith('/перевод'):
             text = request[9:] 
             tr = translate(api_key, text, 'ru')
             if debug: print('Debug:',tr)
             print('перевод ->', tr['text'][0])
         
+        #translate to english
         elif request.startswith('/translate'):
             text = request[11:]
             tr = translate(api_key, text, 'en')
