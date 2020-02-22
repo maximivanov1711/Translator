@@ -1,8 +1,4 @@
-from yandex.Translater import Translater
 import requests
-
-
-# test pycharm commit
 
 
 def translate(key:str, text:str, lang:str):
