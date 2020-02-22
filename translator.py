@@ -2,6 +2,9 @@ from yandex.Translater import Translater
 import requests
 
 
+# test pycharm commit
+
+
 def translate(key:str, text:str, lang:str):
     tr = requests.post('https://translate.yandex.net/api/v1.5/tr.json/translate', data={
         'lang': lang, 
